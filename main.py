@@ -19,7 +19,7 @@ X_train.set_index('Id',inplace=True)
 X_test.set_index('Id',inplace=True)
 
 ## Correlation between features and target variable
-correlation_coefficients = correlations(X_train,'SalePrice',False)
+correlation_coefficients = correlations(X_train,'SalePrice',True)
 
 y = X_train.SalePrice
 m = y.size
